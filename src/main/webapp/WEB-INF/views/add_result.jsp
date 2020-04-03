@@ -2,20 +2,17 @@
   Created by IntelliJ IDEA.
   User: amitgupta
   Date: 4/3/20
-  Time: 4:43 PM
+  Time: 6:58 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+
 <html>
 <head>
-    <title>Add Form</title>
+    <title>Add Result</title>
 </head>
 <body>
-<form action="add">
-    Enter 1st number : <input type="text" name="num1"><br>
-    Enter 2nd number : <input type="text" name="num2"><br>
-
-    <input type="submit">
-</form>
+    Sum is : <%= request.getAttribute("sum") %>
 </body>
 </html>
