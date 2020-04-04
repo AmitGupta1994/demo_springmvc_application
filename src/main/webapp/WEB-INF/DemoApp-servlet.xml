@@ -4,13 +4,13 @@
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
     <bean name="/welcome.htm"
-          class="HelloController" />
+          class="controller.HelloController" />
 
     <bean name=""
-          class="AddFormController" />
+          class="controller.AddFormController" />
 
     <bean name=""
-          class="AddController" />
+          class="controller.AddController" />
 
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
