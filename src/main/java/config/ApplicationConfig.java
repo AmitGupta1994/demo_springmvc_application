@@ -35,6 +35,7 @@ public class ApplicationConfig {
 
     /**
      * Required to inject properties using the 'Value' annotation.
+     *
      */
     @Bean
     public static PropertySourcesPlaceholderConfigurer placeHolderConfigurer() {
