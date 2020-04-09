@@ -12,6 +12,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 /**
  * Spring configuration for sample application.
+ *
  */
 @Configuration
 @ComponentScan({ "config" })
