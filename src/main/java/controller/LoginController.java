@@ -13,7 +13,7 @@ public class LoginController {
     public ModelAndView login(@RequestParam("username") String username,@RequestParam("password") String password){
 
         if(username.equals("amit") && password.equals("test")){
-            ModelAndView mav = new ModelAndView("redirect:"+"/welcome");
+            ModelAndView mav = new ModelAndView("redirect:"+"welcome");
             return mav;
         }else {
             return null;
