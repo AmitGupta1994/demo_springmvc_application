@@ -1,8 +1,6 @@
 package config;
 
-import controller.AddController;
-import controller.AddFormController;
-import controller.HelloController;
+import controller.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,10 +10,9 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 /**
  * Spring configuration for sample application.
- *
  */
 @Configuration
-@ComponentScan({ "config" })
+@ComponentScan({"config"})
 //@PropertySource("classpath:application.properties")
 public class ApplicationConfig {
 
@@ -32,6 +29,16 @@ public class ApplicationConfig {
     @Bean
     public HelloController helloController() {
         return new HelloController();
+    }
+
+    @Bean
+    public LoginController loginController() {
+        return new LoginController();
+    }
+
+    @Bean
+    public WelcomeController welcomeController() {
+        return new WelcomeController();
     }
 
     /**
