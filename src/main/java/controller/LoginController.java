@@ -16,7 +16,8 @@ public class LoginController {
             ModelAndView mav = new ModelAndView("redirect:"+"welcome");
             return mav;
         }else {
-            return null;
+            ModelAndView mav = new ModelAndView("login");
+            return mav;
         }
 
 
