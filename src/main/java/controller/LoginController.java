@@ -9,17 +9,16 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class LoginController {
 
-    @RequestMapping(value = "/login",method = RequestMethod.POST)
-    public ModelAndView login(@RequestParam("username") String username,@RequestParam("password") String password){
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public ModelAndView login(@RequestParam("username") String username, @RequestParam("password") String password) {
 
-        if(username.equals("amit") && password.equals("test")){
-            ModelAndView mav = new ModelAndView("redirect:"+"welcome");
+        if (username.equals("amit") && password.equals("test")) {
+            ModelAndView mav = new ModelAndView("redirect:" + "welcome");
             return mav;
-        }else {
+        } else {
             ModelAndView mav = new ModelAndView("login");
             return mav;
         }
-
 
     }
 
